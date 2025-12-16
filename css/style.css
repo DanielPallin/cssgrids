@@ -8,18 +8,21 @@ body {
 .header {
 	text-align: center;
 	border: #000000 1px solid;
-	margin: 30px;
 }
 
 .main {
     display: grid; 
-	grid-template-columns: 20% 60% 20% ;
-	height: 200px;
-	margin: 30px;
-
+	grid-template-columns: 20% 56% 20% ;
+	height: 25%;
+	column-gap: 2%;
 }
+
 .box {
 	border: #000000 1px solid;
-	margin: 30px
-	
+}
+
+.wrapper {
+margin: 40px;
+display: grid;
+border: #000000 1px solid;
 }

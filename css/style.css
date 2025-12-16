@@ -1,28 +1,68 @@
 /** Not allowed to change this initial CSS code **/
 body {
-	background: url(../img/12_col.gif) center top repeat-y;
-	background-size: 90%;
+    background: url(../img/12_col.gif) center top repeat-y;
+    background-size: 90%;
 }
 /*************************************************/
-
-.header {
-	text-align: center;
-	border: #000000 1px solid;
-}
-
-.main {
-    display: grid; 
-	grid-template-columns: 20% 56% 20% ;
-	height: 25%;
-	column-gap: 2%;
-}
-
-.box {
-	border: #000000 1px solid;
-}
-
+ 
 .wrapper {
-margin: 40px;
 display: grid;
-border: #000000 1px solid;
+height: 20vw;
+grid-template-rows: repeat(4, 1fr);
+margin-left: 5%;
+margin-right: 5%;
+}
+ 
+.header {
+    margin: 5px;
+    text-align: center;
+    border: #000000 3px solid;
+	height: 20vw;
+}
+ 
+.boxcontainer{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+	height: 20vw;
+}
+ 
+.box {
+    border: #000000 3px solid;
+    margin: 5px;
+}
+ 
+.boxcontainer2{
+	display: grid;
+	grid-template-columns: 75% 25%;
+	height: 20vw;
+	
+} 
+
+.content{
+    border: #000000 3px solid;
+    margin: 5px;
+    display: grid;
+    
+}
+ 
+.sidebar{
+    border: #000000 3px solid;
+    margin: 5px;
+    display: grid;
+	
+    
+}
+ 
+footer{
+	display: grid;
+	grid-template-columns: 24% auto auto 24%;
+    margin: 5px;
+	column-gap: 10px;
+    border: #000000 3px solid;
+	padding: 5px;
+	height: 20vw;
+}
+ 
+.f {
+    border: #000000 3px solid;
 }

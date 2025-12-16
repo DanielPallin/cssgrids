@@ -7,8 +7,19 @@ body {
 
 .header {
 	text-align: center;
-	padding: 1em;
 	border: #000000 1px solid;
+	margin: 30px;
 }
 
+.main {
+    display: grid; 
+	grid-template-columns: 20% 60% 20% ;
+	height: 200px;
+	margin: 30px;
 
+}
+.box {
+	border: #000000 1px solid;
+	margin: 30px
+	
+}

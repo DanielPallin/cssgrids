@@ -9,8 +9,10 @@ body {
 display: grid;
 height: 90vw;
 grid-template-rows: repeat(4, 1fr);
+grid-template-columns: repeat (4, 1fr);
 row-gap: 3%;
-width: 90vw;
+width: 88vw;
+margin: 0 auto; 
 }
  
 .header {
@@ -18,10 +20,10 @@ width: 90vw;
     border: #000000 3px solid;
 }
  
- 
 .boxcontainer{
     display: grid;
     grid-template-columns: 20% auto 20%;
+    column-gap: 3%;
 }
  
 .box {
@@ -30,7 +32,8 @@ width: 90vw;
  
 .main{
     display:grid;
-    grid-template-columns: 75% auto;    
+    grid-template-columns: 75% auto; 
+    column-gap: 3%;   
 }
  
 .content{
@@ -59,8 +62,15 @@ footer{
  
 /*Mobile screens*/
 @media screen and (max-width: 400px) {  
-   .wrapper {
-    display: grid;
-    grid-template-rows: 50% 50%; }
+  
+   .footer {grid-area: f;}
+   footer {
+  display: grid;
+  grid-template-areas:
+    "f1"
+    "f2"
+    "f3"
+    "f4";
+}
  
    }

@@ -15,7 +15,7 @@ width: 90%;
 }
  
 .header {
-    margin: 5px;
+    margin: 1%;
     text-align: center;
     border: #000000 3px solid;
 	height: 20vw;
@@ -29,7 +29,7 @@ width: 90%;
  
 .box {
     border: #000000 3px solid;
-    margin: 5px;
+    margin: 1%;
 }
  
 .boxcontainer2{
@@ -41,26 +41,25 @@ width: 90%;
 
 .content{
     border: #000000 3px solid;
-    margin: 5px;
+    margin: 1%;
     display: grid;
     
 }
  
 .sidebar{
     border: #000000 3px solid;
-    margin: 5px;
+    margin: 1%;
     display: grid;
-	
-    
+
 }
  
 footer{
 	display: grid;
 	grid-template-columns: 24% auto auto 24%;
-    margin: 5px;
-	column-gap: 10px;
+    margin: 1%;
+	column-gap: 10vw;
     border: #000000 3px solid;
-	padding: 5px;
+	padding: 5vw;
 	height: 20vw;
 }
  
@@ -69,10 +68,10 @@ footer{
 }
 
 /*Mobile screens*/
-@media screen and (max-width: 400px) and (min-width: 200px) {   
+@media screen and (max-width: 400px) {   
    .wrapper {
     display: grid;
-    grid-template-rows: 50% 20% 30%;
+    grid-template-rows: 50% 50%;
 	height: 20vw; }
     
    }

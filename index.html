@@ -15,7 +15,7 @@
             <h1 class="header-title">Header</h1>
         </header>
  
-        <main class="main">
+       
  
             <div class="boxcontainer">
                 <section class="box">Box1</section>
@@ -23,17 +23,17 @@
                 <section class="box">Box3</section>
             </div>
  
-            <div class="boxcontainer2">
+            <main class="main">
+ 
                 <div class="content">
                     <p>Content text</p>
                 </div>
- 
+   
                 <aside class="sidebar">
                     <p>Sidebar text lite så</p>
                 </aside>
-            </div>
  
-        </main>
+            </main>
  
         <footer>
             <div class="f">footer1</div>
@@ -46,3 +46,73 @@
 </body>
  
 </html>
+/** Not allowed to change this initial CSS ... av Frost Harald Emanuel Wallin
+Frost Harald Emanuel Wallin
+11:10
+Översätt
+/** Not allowed to change this initial CSS code **/
+body {
+    background: url(../img/12_col.gif) center top repeat-y;
+    background-size: 90%;
+}
+/*************************************************/
+ 
+.wrapper {
+display: grid;
+height: 90vw;
+grid-template-rows: repeat(4, 1fr);
+row-gap: 3%;
+width: 90vw;
+}
+ 
+.header {
+    text-align: center;
+    border: #000000 3px solid;
+}
+ 
+ 
+.boxcontainer{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+}
+ 
+.box {
+    border: #000000 3px solid;
+}
+ 
+.main{
+    display:grid;
+    grid-template-columns: 75% auto;    
+}
+ 
+.content{
+    border: #000000 3px solid;
+    display: grid;
+   
+}
+ 
+.sidebar{
+    border: #000000 3px solid;
+    display: grid;
+ 
+}
+ 
+footer{
+    display: grid;
+    grid-template-columns: 24% auto auto 24%;
+    column-gap: 1%;
+    border: #000000 3px solid;
+    padding: 1%;
+}
+ 
+.f {
+    border: #000000 3px solid;
+}
+ 
+/*Mobile screens*/
+@media screen and (max-width: 400px) {  
+   .wrapper {
+    display: grid;
+    grid-template-rows: 50% 50%; }
+ 
+   }
